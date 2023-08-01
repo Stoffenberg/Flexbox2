@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    gap: 25px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+}
+
+[class ^="box-"] {
+    width: 140px;
+    height: 140px;
+    background-color: skyblue;
+    border: 2px solid black;
+    font-size: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-content:  center flex-end;
+}
+
+.box-1 {
+    flex-grow: 1;
+}
+
+.box-2 {
+    align-self: center;
+    flex: 2 1 30em
+}
+
+.box-3 {
+    flex-grow: 1;
+}
